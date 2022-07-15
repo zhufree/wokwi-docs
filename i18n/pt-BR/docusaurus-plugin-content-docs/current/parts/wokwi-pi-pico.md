@@ -39,7 +39,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-Veja o [Blink](https://wokwi.com/arduino/projects/297755575592157709) para um exemplo de código completo.
+Veja o [Blink](https://wokwi.com/projects/297755575592157709) para um exemplo de código completo.
 
 ## Recursos do simulador
 
@@ -54,8 +54,8 @@ Esta tabela resume o status dos recursos da simulação:
 | USB                      | ❌     |                                                      |
 | UART                     | ✔️     |                                                      |
 | I2C                      | ✔️     | Modo mestre apenas                                   |
-| SPI                      | ❌     |                                                      |
-| PWM                      | ❌     |                                                      |
+| SPI                      | ✔️     | Master mode only                                     |
+| PWM                      | ✔️     |                                                      |
 | DMA                      | ✔️     |                                                      |
 | Timer                    | ✔️     | A pausa do cronômetro ainda não foi implementada     |
 | ARM SysTick Timer        | 🟡     | Implementação parcial                                |
@@ -70,13 +70,11 @@ Legenda:
 🟡 Implementação parcial/trabalho em andamento
 ❌ Não implementado
 
-Estamos adicionando os recursos que faltam em [transmissões ao vivo semanais](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Espere que a lista acima seja atualizada a cada uma ou duas semanas.
-
 ### Arduino core
 
 O núcleo do Arduino fornece as funções integradas do Arduino, como `pinMode()` e `digitalRead()`, bem como um conjunto de bibliotecas padrão do Arduino, como Servo, Wire e SPI.
 
-Ao compilar seu código para o Raspberry Pi Pi Pico, você pode escolher entre dois núcleos diferentes:
+Ao compilar seu código para o Raspberry Pi Pico, você pode escolher entre dois núcleos diferentes:
 
 - O [núcleo oficial do Pi Pico](https://github.com/arduino/ArduinoCore-mbed), baseado no sistema operacional Mbed. Este é o padrão.
 - [Mantido pela comunidade Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), construído sobre o [Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
@@ -137,7 +135,7 @@ void loop() { }
 
 Observe o uso de `Serial1`. O `Serial` padrão no Arduino Core usa Serial over USB (CDC), que atualmente não é suportado na simulação. `Serial1`, em contraste, usa o hardware UART (conectado aos pinos GP0/GP1).
 
-Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://wokwi.com/arduino/projects/297755360074138125).
+Para um exemplo completo, confira o [Exemplo de monitor serial Pi Pico](https://wokwi.com/projects/297755360074138125).
 
 ## Exportando binário UF2
 
@@ -155,7 +153,7 @@ O Raspberry Pi Pico oferece suporte a MicroPython e você pode usá-lo para exec
 
 ## Exemplos no simulador
 
-- [LCD1602 com Pi Pico](https://wokwi.com/arduino/projects/297323005822894602)
-- [Semáforo com Pi Pico](https://wokwi.com/arduino/projects/297322571959894536)
-- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
-- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
+- [LCD1602 com Pi Pico](https://wokwi.com/projects/297323005822894602)
+- [Semáforo com Pi Pico](https://wokwi.com/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/projects/298014884249993738)

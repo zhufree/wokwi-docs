@@ -9,10 +9,10 @@ Um buzzer piezoelétrico
 
 ## Nome dos Pinos
 
-| Nome | Descrição     |
-| ---- | ------------- |
-| 1    | Primeiro pino |
-| 2    | Segundo pino  |
+| Nome | Descrição                |
+| ---- | ------------------------ |
+| 1    | Pino negativo (preto)    |
+| 2    | Pino positivo (vermelho) |
 
 ## Atributos
 
@@ -45,5 +45,5 @@ tone(8, 262, 250); // Toca um tom de 262Hz por 0,250 segundos
 ## Exemplos no simulador
 
 - [Jogo Simon](https://wokwi.com/arduino/libraries/demo/simon-game) - Um jogo de memória com 4 botões de pressão
-- [Piano diatônico](https://wokwi.com/arduino/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
+- [Piano diatônico](https://wokwi.com/projects/291958456169005577) - Um piano de 8 notas, use as teclas 1 a 8 para pressionar os botões e tocar as notas.
 - [Despertador](https://wokwi.com/playground/alarm-clock) - Use a campainha para tocar o som do alarme

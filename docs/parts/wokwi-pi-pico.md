@@ -39,7 +39,7 @@ pinMode(LED_BUILTIN, OUTPUT);
 digitalWrite(LED_BUILTIN, HIGH);
 ```
 
-See [Blink](https://wokwi.com/arduino/projects/297755575592157709) for a complete code example.
+See [Blink](https://wokwi.com/projects/297755575592157709) for a complete code example.
 
 ## Simulation features
 
@@ -54,8 +54,8 @@ This table summarizes the status of the simulation features:
 | USB               | 🟡     | USB CDC (Serial) supported, see [Serial Monitor](#serial-monitor) below |
 | UART              | ✔️     |                                                                         |
 | I2C               | ✔️     | Master mode only                                                        |
-| SPI               | ❌     |                                                                         |
-| PWM               | ❌     |                                                                         |
+| SPI               | ✔️     | Master mode only                                                        |
+| PWM               | ✔️     |                                                                         |
 | DMA               | ✔️     | Only for the PIO peripheral                                             |
 | Timer             | ✔️     | Pausing the timer not implemented yet                                   |
 | ARM SysTick Timer | 🟡     | Partial implementation                                                  |
@@ -70,13 +70,11 @@ Legend:
 🟡 Partial implementation/work in progress  
 ❌ Not implemented
 
-We're adding the missing features in [weekly live streams](https://www.youtube.com/playlist?list=PLLomdjsHtJTxT-vdJHwa3z62dFXZnzYBm). Expect the list above to update every week or two.
-
 ### Arduino core
 
 The Arduino core provides the built-in Arduino functions, such as `pinMode()` and `digitalRead()`, as well as a set of standard Arduino libraries, such as Servo, Wire and SPI.
 
-When compiling your code for the Raspberry Pi Pi Pico, you can choose between two different cores:
+When compiling your code for the Raspberry Pi Pico, you can choose between two different cores:
 
 - The [official Pi Pico core](https://github.com/arduino/ArduinoCore-mbed), based on Mbed OS. This is the default.
 - [The community maintained Pi Pico Arduino Core](https://github.com/earlephilhower/arduino-pico), built on top of [the Pi Pico SDK](https://github.com/raspberrypi/pico-sdk).
@@ -154,7 +152,7 @@ void setup() {
 void loop() { }
 ```
 
-For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/arduino/projects/297755360074138125).
+For a complete example, check out the [Pi Pico Serial Monitor over UART Example](https://wokwi.com/projects/297755360074138125).
 
 ## Exporting UF2 binary
 
@@ -172,7 +170,7 @@ The Raspberry Pi Pico supports MicroPython, and you can use it for running Micro
 
 ## Simulator examples
 
-- [Pi Pico and LCD1602](https://wokwi.com/arduino/projects/297323005822894602)
-- [Pi Pico Traffic Light](https://wokwi.com/arduino/projects/297322571959894536)
-- [Pi Pico C++ SDK Blink](https://wokwi.com/arduino/projects/298013072042230285)
-- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/arduino/projects/298014884249993738)
+- [Pi Pico and LCD1602](https://wokwi.com/projects/297323005822894602)
+- [Pi Pico Traffic Light](https://wokwi.com/projects/297322571959894536)
+- [Pi Pico C++ SDK Blink](https://wokwi.com/projects/298013072042230285)
+- [Pi Pico C++ SDK 7-Segment Example](https://wokwi.com/projects/298014884249993738)

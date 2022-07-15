@@ -24,6 +24,10 @@ Move a part by clicking on it and then dragging it with your mouse.
 Rotate a part by clicking on it (to select it) and then pressing "R". The part will rotate 90 degrees clockwise. If you need to rotate a part by
 a different amount (e.g. 45 degrees), you can achieve that by [editing diagram.json](../diagram-format#parts).
 
+### Duplicating a part
+
+Create a new copy of a part by clicking on it (to select it) and the pressing "D". You can press "D" several times to create multiple copies of the part.
+
 ### Deleting a part
 
 Delete a part by clicking on it (to select it) and then pressing the Delete button.
@@ -42,28 +46,50 @@ To cancel a new wire (delete it without selecting a target pin) click the right 
 
 The color of new wires is automatically determined by the function of the pin: wires starting from ground pins are black, 5&nbsp;V pins are red, and other wires are green.
 
-The interactive editor does not support setting the color of wires. You can, however, change the color of any wire by editing [diagram.json](../diagram-format#connections)
+You can change the color of a wire by clicking on it, and then selecting a new color for the wire. You can also use the following keyboard shortcuts to set wire colors:
+
+| Shortcut | Color     |
+| -------- | --------- |
+| 0        | Black     |
+| 1        | Brown     |
+| 2        | Red       |
+| 3        | Orange    |
+| 4        | Gold      |
+| 5        | Green     |
+| 6        | Blue      |
+| 7        | Violet    |
+| 8        | Gray      |
+| 9        | White     |
+| C        | Cyan      |
+| L        | Limegreen |
+| M        | Magenta   |
+| P        | Purple    |
+| Y        | Yellow    |
+
+These keyboard shortcuts also work while drawing a new wire. You can also change wire colors by editing [diagram.json](../diagram-format#connections)
 
 ### Deleting a wire
 
-Delete a wire by clicking on it.
+Select a wire by clicking on it, and then click the trash icon on the wire (or press the Delete key). You can also delete a wire by double-clicking on it.
 
 ## Keyboard shortcuts
 
 The following table summarizes the keyboard shortcuts:
 
-| Key    | Function                                    |
-| ------ | ------------------------------------------- |
-| -      | Zoom out                                    |
-| +      | Zoom in                                     |
-| R      | Rotate the selected part                    |
-| Delete | Delete the selected part                    |
-| ?      | Open documentation for the selected part    |
-| Escape | Cancel wire (in wiring mode)                |
-| G      | Toggle the grid                             |
-| Shift  | Toggle coarse grid snapping while dragging  |
-| Alt    | Toggle fine grid snapping while dragging    |
-| Ctrl   | Toggle fine grid snapping while dragging    |
+| Key    | Function                                   |
+| ------ | ------------------------------------------ |
+| -      | Zoom out                                   |
+| +      | Zoom in                                    |
+| F      | Fit diagram to window (auto zoom)          |
+| D      | Duplicate (copy) the selected part         |
+| R      | Rotate the selected part                   |
+| Delete | Delete the selected part / wire            |
+| ?      | Open documentation for the selected part   |
+| Escape | Cancel wire (in wiring mode)               |
+| G      | Toggle the grid                            |
+| Shift  | Toggle coarse grid snapping while dragging |
+| Alt    | Toggle fine grid snapping while dragging   |
+| Ctrl   | Toggle fine grid snapping while dragging   |
 
 Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
 
@@ -87,3 +113,5 @@ The Shift key temporarily toggles the grid snapping mode between the coarse grid
 The Alt key or the Ctrl key temporarily toggle to fine grid snapping whether the grid is visible or not.
 
 This grid snapping behaviour is the same for both parts and new wires, and the modifier keys allow you to perform grid snapping whether the grid is on or off.
+
+When you start the simulation, Wokwi hides the grid. Stopping the simulation restores the grid.

@@ -3,7 +3,7 @@ title: MicroPython on Wokwi
 sidebar_label: MicroPython
 ---
 
-You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/arduino/new?template=micropython-pi-pico).
+You can create and run MicroPython projects on Wokwi. Start from the [Raspberry Pi Pico MicroPython project template](https://wokwi.com/projects/new/micropython-pi-pico).
 
 ## Project structure
 
@@ -26,5 +26,5 @@ When the code in `main.py` terminates (or you interrupt it with Ctrl+C), you'll 
 
 ## Project examples
 
-- [Blink with MicroPython](https://wokwi.com/arduino/projects/300504213470839309)
-- [MicroPython 7-Segment Display](https://wokwi.com/arduino/projects/300210834979684872)
+- [Blink with MicroPython](https://wokwi.com/projects/300504213470839309)
+- [MicroPython 7-Segment Display](https://wokwi.com/projects/300210834979684872)

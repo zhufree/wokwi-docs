@@ -25,6 +25,13 @@ Display colorido LCD-TFT 240x320 de 2,8" com interface SPI
 † Você pode conectar o CS e D/C a qualquer pino digital do Arduino. Os números dos pinos aqui são apenas um exemplo.  
 ‡ Você pode deixar o MISO desconectado, a menos que precise ler os dados do LCD.
 
+## Atributos
+
+| Nome           | Descrição                                         | Valor padrão  |
+| -------------- | ------------------------------------------------- | ------------- |
+| flipHorizontal | Defina como "1" para virar a tela horizontalmente | ""            |
+| flipVertical   | Defina como "1" para virar a tela verticalmente   | ""            |
+
 ## Uso no Arduino
 
 Você pode usar as bibliotecas _Adafruit_ILI9341_ ou _lcdgfx_ para fazer a interface com o display LCD. O exemplo de código a seguir mostra o uso básico com _Adafruit_ILI9341_. Funciona com as conexões de pino da tabela acima:
@@ -56,13 +63,13 @@ void setup() {
 void loop() { }
 ```
 
-[Execute este exemplo no Wokwi](https://wokwi.com/arduino/projects/308024602434470466)
+[Execute este exemplo no Wokwi](https://wokwi.com/projects/308024602434470466)
 
 ## Exemplos no simulador
 
-- [Exemplo Adafruit ILI9341 GFX](https://wokwi.com/arduino/projects/307567201804616256)
-- [Fingerprint Pattern](https://wokwi.com/arduino/projects/307567963154678338)
-- [Mandelbrot Set](https://wokwi.com/arduino/projects/307567275170333248)
-- [Neon Ribbons](https://wokwi.com/arduino/projects/307577144545903170)
-- [Logotipo Wokwi sobre Plasma](https://wokwi.com/arduino/projects/307664460274729536)
-- [Lode Runner com lcdgfx](https://wokwi.com/arduino/projects/308022099088245312)
+- [Exemplo Adafruit ILI9341 GFX](https://wokwi.com/projects/307567201804616256)
+- [Fingerprint Pattern](https://wokwi.com/projects/307567963154678338)
+- [Mandelbrot Set](https://wokwi.com/projects/307567275170333248)
+- [Neon Ribbons](https://wokwi.com/projects/307577144545903170)
+- [Logotipo Wokwi sobre Plasma](https://wokwi.com/projects/307664460274729536)
+- [Lode Runner com lcdgfx](https://wokwi.com/projects/308022099088245312)

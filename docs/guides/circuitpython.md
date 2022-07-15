@@ -3,7 +3,7 @@ title: CircuitPython on Wokwi
 sidebar_label: CircuitPython
 ---
 
-You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/arduino/new?template=circuitpython-pi-pico).
+You can simulate CircuitPython on Wokwi using the [Raspberry Pi Pico board](../parts/wokwi-pi-pico). To start a new simulation project, open the [Raspberry Pi Pico CircuitPython project template](https://wokwi.com/projects/new/circuitpython-pi-pico).
 
 ## Project structure
 
@@ -30,7 +30,7 @@ adafruit_display_text
 adafruit_dht
 ```
 
-When you start the simulation, Wokwi downloads all the libraries and their dependencies. It copies them into the "lib" folder in the flash filesystem. You can call `os.listdir('/lib')` to get a list of all the libraries installed. For a complete code example, see [CircuitPython Library List](https://wokwi.com/arduino/projects/309475039016649280).
+When you start the simulation, Wokwi downloads all the libraries and their dependencies. It copies them into the "lib" folder in the flash filesystem. You can call `os.listdir('/lib')` to get a list of all the libraries installed. For a complete code example, see [CircuitPython Library List](https://wokwi.com/projects/309475039016649280).
 
 # CircuitPython REPL
 
@@ -38,5 +38,5 @@ When the code in `code.py` terminates (or you interrupt it with Ctrl+C), you'll 
 
 ## Project examples
 
-- [Blink with CircuitPython](https://wokwi.com/arduino/projects/309474946192507458)
-- [CircuitPython SSD1306 Example](https://wokwi.com/arduino/projects/309427357921313345)
+- [Blink with CircuitPython](https://wokwi.com/projects/309474946192507458)
+- [CircuitPython SSD1306 Example](https://wokwi.com/projects/309427357921313345)

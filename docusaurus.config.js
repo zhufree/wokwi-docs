@@ -10,13 +10,13 @@ module.exports = {
   projectName: 'wokwi-docs',
   scripts: [
     {
-      src: 'https://unpkg.com/@wokwi/elements@0.55.2/dist/wokwi-elements.bundle.js',
+      src: 'https://unpkg.com/@wokwi/elements@0.57.2/dist/wokwi-elements.bundle.js',
       async: true,
     },
   ],
   themeConfig: {
     image: 'img/wokwi-book.jpg',
-    metadatas: [
+    metadata: [
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
     ],
@@ -114,20 +114,16 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
-    ],
-  ],
-  plugins: [
-    [
-      'docusaurus-plugin-plausible',
-      {
-        domain: 'docs.wokwi.com',
+        gtag: {
+          trackingID: 'G-PHBY8B943B',
+          anonymizeIP: true,
+        },
       },
     ],
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt-BR', 'zh-CN'],
+    locales: ['en', 'pt-BR'],
     localeConfigs: {
       en: {
         label: 'English',

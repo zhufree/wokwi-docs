@@ -21,9 +21,11 @@ Set of 8 electrical switches in a single package
 
 ## Keyboard operation
 
-Click on the DIP Switch to focus on it, and then toggle the switches by pressing the keys "1" to 8".
+You can use the keyboard to toggle the swithches while the simulation is running. Click on the DIP switch to select it, then toggle the switches by pressing the keys "1" to "8". 
+
+Firefox users: if the keyboard shortcuts don't work for you, please make sure that the "Search for text when you start typing" setting is disabled.
 
 ## Simulator examples
 
-- [DIP Switch + LED Bar example](https://wokwi.com/arduino/projects/314167394611233344)
-- [Arduino PIND register example](https://wokwi.com/arduino/projects/314168546236039745)
+- [DIP Switch + LED Bar example](https://wokwi.com/projects/314167394611233344)
+- [Arduino PIND register example](https://wokwi.com/projects/314168546236039745)

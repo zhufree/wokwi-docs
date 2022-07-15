@@ -1,6 +1,6 @@
 module.exports = {
   main: {
-    'Getting Started': ['welcome', 'faq'],
+    'Getting Started': ['welcome', 'getting-started/wokwi-club', 'faq'],
     Guides: [
       'guides/diagram-editor',
       'keyboard-shortcuts',
@@ -11,14 +11,18 @@ module.exports = {
       'guides/micropython',
       'guides/circuitpython',
       'guides/esp32',
+      'guides/esp32-wifi',
       'guides/translating',
       'guides/votepowers',
     ],
     'Diagram Reference': [
       'diagram-format',
+      'parts/board-franzininho-wifi',
+      'parts/board-ssd1306',
       'parts/wokwi-74hc165',
       'parts/wokwi-74hc595',
       'parts/wokwi-7segment',
+      'parts/wokwi-a4988',
       'parts/wokwi-analog-joystick',
       'parts/wokwi-arduino-mega',
       'parts/wokwi-arduino-nano',
@@ -33,6 +37,7 @@ module.exports = {
       'parts/wokwi-ili9341',
       'parts/wokwi-ir-receiver',
       'parts/wokwi-ir-remote',
+      'parts/wokwi-ks2e-m-dc5',
       'parts/wokwi-ky-040',
       'parts/wokwi-lcd1602',
       'parts/wokwi-lcd2004',
@@ -55,7 +60,7 @@ module.exports = {
       'parts/wokwi-servo',
       'parts/wokwi-slide-potentiometer',
       'parts/wokwi-slide-switch',
-      'parts/wokwi-ssd1306',
+      'parts/wokwi-stepper-motor',
       'parts/wokwi-tv',
     ],
   },
